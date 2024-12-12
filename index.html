@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propuesta Especial</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/volume-control.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Login Page -->
+        <div id="loginPage" class="page active">
+            <i class='bx bxs-heart heart-icon'></i>
+            <h1>¿Te quieres casar conmigo?</h1>
+            <div class="buttons">
+                <button id="siBtn" class="btn btn-si">Sí</button>
+                <button id="noBtn" class="btn btn-no">No</button>
+            </div>
+        </div>
+
+        <!-- Gallery Page -->
+        <div id="galleryPage" class="page">
+            <div class="message">
+                <p>Acá estarán todos nuestros momentos y recuerdos para que lo veas y recuerdes que este hombre es, fue y será feliz solo junto a ti, que está loco de amor por su Reina 💗🥺</p>
+            </div>
+            <div class="gallery">
+                <!-- Gallery items will be added by JavaScript -->
+            </div>
+            <button id="exitBtn" class="btn-exit">
+                <i class='bx bx-x'></i>
+            </button>
+        </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+        <source src="musica/Morat - Aprender A Quererte.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="js/volume-control.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/gallery.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
