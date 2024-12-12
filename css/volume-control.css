@@ -1,0 +1,61 @@
+/* Volume control styles */
+.volume-control {
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 0.5rem;
+    border-radius: 9999px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 100;
+}
+
+.volume-icon {
+    color: #d81b60;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.volume-icon:hover {
+    color: #c2185b;
+}
+
+.volume-slider {
+    width: 100px;
+    height: 4px;
+    -webkit-appearance: none;
+    background: #f8bbd0;
+    border-radius: 2px;
+    outline: none;
+}
+
+.volume-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: #d81b60;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.volume-slider::-webkit-slider-thumb:hover {
+    background: #c2185b;
+}
+
+.volume-slider::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: #d81b60;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.volume-slider::-moz-range-thumb:hover {
+    background: #c2185b;
+}
